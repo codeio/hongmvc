@@ -1,0 +1,100 @@
+﻿body
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    background: url(../../image/admin/login_bg.png) repeat-x;
+}
+
+.login
+{
+    position: relative;
+    width: 553px;
+    height: 350px;
+    margin: 100px auto 0px;
+    background: url(../../image/admin/login_bg2.png) no-repeat;
+}
+
+.msg
+{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    color: #f00;
+}
+
+.form
+{
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    width: 350px;
+}
+
+.input1
+{
+    margin-bottom: 10px;
+}
+
+.input2
+{
+    margin-bottom: 10px;
+}
+
+.input1 label
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.input2 label
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.input1 input
+{
+    width: 201px;
+    height: 20px;
+    padding: 8px 10px 8px 30px;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 13px;
+    border: none;
+    background: url(../../image/admin/login_input1.png) no-repeat;
+}
+
+.input2 input
+{
+    width: 201px;
+    height: 20px;
+    padding: 8px 10px 8px 30px;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 13px;
+    border: none;
+    background: url(../../image/admin/login_input2.png) no-repeat;
+}
+
+.btn
+{
+    padding-left: 50px;
+}
+
+    .btn input
+    {
+        width: 91px;
+        height: 34px;
+        border: none;
+        cursor: pointer;
+        background: url(../../image/admin/login_btn.png) no-repeat;
+    }
+
+.copyright
+{
+    position: absolute;
+    bottom: 51px;
+    left: 140px;
+}

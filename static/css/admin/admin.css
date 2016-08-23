@@ -1,0 +1,322 @@
+﻿body {
+    font: 12px/1.6 Tahoma,microsoft yahei,"微软雅黑","宋体";
+    *font-family: "微软雅黑","宋体";
+    background-color: #fff;
+    padding: 20px;
+    color: #444;
+}
+
+a {
+    color: #2A72C5;
+    text-decoration: none;
+}
+
+    a.btn {
+        display: inline-block;
+        padding: 3px 8px;
+        text-align: center;
+        line-height: 22px;
+        background-color: #21b2e7;
+        border: 1px #007998 solid;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+input.btn {
+    background-color: #2FA7EA;
+    border: 1px #168ACB solid;
+    padding: 6px 14px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input.text {
+    border: 1px #BAC5D4 solid;
+    border-radius: 5px;
+    background-color: #EEF3F8;
+    width: 300px;
+    padding: 6px;
+    cursor: text;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.msg {
+    padding: 10px;
+    color: #009966;
+    font-size: 16px;
+}
+
+.tip {
+    border: 1px #E1E1E1 solid;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background: url(../../image/admin/tip.png) no-repeat;
+}
+
+.empty {
+    font-size: 14px;
+    background-color: #F5F5F5;
+    padding: 15px;
+    text-align: center;
+}
+
+.search {
+    font-size: 14px;
+    background-color: #F5F5F5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+    .search span {
+        margin-right: 10px;
+    }
+
+    .search input.stext {
+        border: 1px #D8D8D8 solid;
+        background-color: #fff;
+        height: 20px;
+        padding: 4px 6px;
+        width: 200px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .search input.sbtn {
+        border: 1px #BF7004 solid;
+        background-color: #F18D05;
+        height: 30px;
+        padding: 0 14px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+/*table list*/
+.table_list {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+    .table_list thead tr {
+        height: 36px;
+        line-height: 36px;
+        border: 1px #E1E1E1 solid;
+        background-color: #F5F5F5;
+    }
+
+    .table_list th {
+        padding: 0 10px;
+    }
+
+    .table_list tbody tr {
+        height: 40px;
+        line-height: 40px;
+        border: 1px #E1E1E1 solid;
+    }
+
+    .table_list td {
+       padding: 5px 10px;
+    }
+
+    .table_list tbody span.red {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #EC7395;
+    }
+
+    .table_list tbody span.gray {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .table_list tbody span.green {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #4BC2CD;
+    }
+
+
+/*table show*/
+.table_show {
+    width: 100%;
+    font-size: 14px;
+}
+
+    .table_show thead th {
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px #E1E1E1 solid;
+        background-color: #F5F5F5;
+    }
+
+    .table_show tbody tr {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .table_show tbody td {
+        padding: 10px;
+        border: 1px #E1E1E1 solid;
+    }
+
+        .table_show tbody td.label {
+            text-align: right;
+            font-weight: bold;
+        }
+
+    .table_show tbody span.red {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #EC7395;
+    }
+
+    .table_show tbody span.gray {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .table_show tbody span.green {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        background-color: #4BC2CD;
+    }
+
+/*table form*/
+.validation-summary-errors {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    width: 200px;
+    color: #ff0000;
+    border: 1px #ff0000 solid;
+    padding: 10px 10px 10px 35px;
+    line-height: 22px;
+    background: #fff url(../../image/admin/error.png) no-repeat 10px center;
+}
+
+.table_form {
+    width: 100%;
+}
+
+    .table_form tbody td {
+        padding: 10px;
+    }
+
+        .table_form tbody td.label {
+            width: 100px;
+            text-align: right;
+            font-size: 12px;
+        }
+
+    .table_form tbody textarea.text {
+        border: 1px #BAC5D4 solid;
+        background-color: #EEF3F8;
+        width: 600px;
+        height: 100px;
+        padding: 8px;
+    }
+
+    
+/*专家分类选择样式*/
+.subcate {
+    width: 100%;
+    padding: 10px;
+    border: 1px #bac5d4 solid;
+}
+
+.subcate .item {
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*分页样式*/
+.pager {
+    padding-top: 20px;
+    text-align: right;
+    color: #3C3C3C;
+    font-weight: normal;
+    background-color: #FFFFFF;
+}
+
+    .pager a {
+        display: inline-block;
+        margin-right: 6px;
+        padding: 4px 9px;
+        border: 1px #C3C3C3 solid;
+        color: #3C3C3C;
+        text-decoration: none;
+    }
+
+        .pager a:hover {
+            border: 1px #21B2E7 solid;
+            background-color: #21B2E7;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+    .pager .current {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 4px 9px;
+        color: #fff;
+        border: 1px #21B2E7 solid;
+        background-color: #21B2E7;
+    }
+
+    .pager .ellipsis {
+        margin-right: 5px;
+    }
+
+    .pager .prev, .pager .next {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 4px 9px;
+        border: 1px #ccc solid;
+        color: #ccc;
+    }
+
+    .pager .count {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 4px 9px;
+        border: 1px #C3C3C3 solid;
+    }
+
+.footer {
+    border-top: 1px #e1e1e1 solid;
+    margin-top: 100px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 26px;
+}

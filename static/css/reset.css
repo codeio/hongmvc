@@ -1,0 +1,53 @@
+﻿html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, select, input, textarea, p, blockquote, th, td, iframe, hr {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/1.6 Tahoma,microsoft yahei,"微软雅黑","宋体";
+    *font-family: "微软雅黑","宋体";
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, dfn, em, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select, input, label, button, textarea {
+    font: 12px/1.6 Tahoma,microsoft yahei,"微软雅黑","宋体";
+    *font-family: "微软雅黑","宋体";
+}
+
+.clear {
+    clear: both;
+}
