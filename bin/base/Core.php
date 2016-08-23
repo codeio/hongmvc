@@ -1,6 +1,6 @@
 <?php
 
-if(!defined('IN_HONG')) {
+if(!defined('IN_HONGMVC')) {
     exit('Access Denied');
 }
 

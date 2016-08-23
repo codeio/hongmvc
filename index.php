@@ -1,7 +1,7 @@
 <?php
 
-require 'bin/HongMvc.php';
+//require 'bin/HongMvc.php';
 
-HongMvc::init();
-
+//HongMvc::init();
+echo phpinfo();
 ?>
