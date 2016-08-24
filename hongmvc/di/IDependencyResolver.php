@@ -1,6 +1,6 @@
 <?php
 
-namespace hong\di;
+namespace hongmvc\di;
 
 interface IDependencyResolver
 {

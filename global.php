@@ -2,7 +2,17 @@
 
 class Application {
 
-	function applicationStart()
+	function beginRequest()
+	{
+		
+	}
+
+    function applicationError()
+	{
+		
+	}
+
+    function endRequest()
 	{
 		
 	}
