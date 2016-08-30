@@ -35,7 +35,7 @@ class MainDb
 class ContainerBuilder
 {
     public function registerType($type) {
-        
+
     }
 }
 
@@ -67,14 +67,11 @@ $controller->index();
 
 $class = new ReflectionClass('HomeController');
 
-$properties = $class->getProperties();  
-foreach($properties as $property) {  
-    //echo $property->getName()."\n";  
-}  
+$constructor = $class->getConstructor();
 
-$t= $class->getMethods(1);
+$params = $constructor->getParameters();
 
-echo var_dump($t);
+echo $params[0]->getType();
 
 //$instance  = $class->newInstanceArgs($args);
 
