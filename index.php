@@ -43,11 +43,12 @@ class HomeController {
 
     private $_db;
 
-    public function __construct(MainDb $db) {
+    public function __construct(MainDb $db, MainDb $db2) {
         $this->_db = $db;
     }
 
     public function index() {
+        echo 'aaa';
         //$this->_db->test();
     }
 
@@ -59,21 +60,27 @@ $container = new ContainerBuilder();
 
 $resolver = new AutofacDependencyResolver();
 
-$db = new MainDB();
+//$db = new MainDB();
 
-$controller = new HomeController($db);
+//$controller = new HomeController($db, $db);
 
-$controller->index();
+//$controller->index();
 
-$class = new ReflectionClass('HomeController');
+$controllerName = 'HomeController';
+
+$class = new ReflectionClass($controllerName);
 
 $constructor = $class->getConstructor();
 
 $params = $constructor->getParameters();
 
-echo $params[0]->getType();
+$paramName = $params[0]->getType()->__toString();
 
-//$instance  = $class->newInstanceArgs($args);
+$db = new $paramName;
 
-DependencyResolver::setResolver($resolver);
+$controller  = $class->newInstanceArgs(array($db, $db));
+
+$controller->index();
+
+//DependencyResolver::setResolver($resolver);
 ?>
