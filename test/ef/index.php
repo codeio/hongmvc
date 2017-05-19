@@ -1,23 +1,69 @@
 <?php 
 
-class Model
-{
-    private $sql = '';
+// class Model
+// {
+//     private $sql = '';
 
-    public function where($str) {
-        $this->sql .= $str;
-        return $this;
-    }
+//     public function where($str) {
+//         $this->sql .= $str;
+//         return $this;
+//     }
 
-    public function output() {
-        echo $this->sql;
-    }
+//     public function where($str) {
+//         $this->sql .= $str;
+//         return $this;
+//     }
+
+//     public function where($str) {
+//         $this->sql .= $str;
+//         return $this;
+//     }
+
+//     public function output() {
+//         echo $this->sql;
+//     }
+// }
+
+// $model = new Model();
+
+// $model->where(" aa")
+//     ->where(" bb")
+//     ->where(" cc");
+
+// $model->output();
+
+//test
+
+
+class Model {
+	function list() {
+		return 222;
+	}
 }
 
-$model = new Model();
-$model->where(" aa")
-    ->where(" bb")
-    ->where(" cc");
+$user = new Model();
+echo $user->list();
 
-$model->output();
+$user->find(1);
+
+$user->first();
+$user->last();
+$user->single();
+
+//获取数量
+$user->where("id", "=", 1)->count();
+
+$user->where("id", "=", 1)->toList();
+
+$user->include("address")
+	->where("id", "=", 1)->toList();
+
+$user->where("id", "=", 1)
+	->where("id", "=", 1)
+	->orderBy("id")
+	->orderByDescending("id")
+	->thenBy("id")
+	->thenByDescending("id")
+	->list();
+
 ?>
