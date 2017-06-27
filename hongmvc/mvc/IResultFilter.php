@@ -1,8 +1,6 @@
 <?php
 
-if(!defined('IN_HONG')) {
-    exit('Access Denied');
-}
+namespace hongmvc\mvc;
 
 interface IResultFilter
 {

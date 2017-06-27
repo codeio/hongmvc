@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 // class Model
 // {
@@ -33,7 +34,9 @@
 // $model->output();
 
 //test
+require 'opcache.php';
 
+exit;
 
 class Model {
 	function list() {
@@ -65,5 +68,7 @@ $user->where("id", "=", 1)
 	->thenBy("id")
 	->thenByDescending("id")
 	->list();
+
+$user->join()
 
 ?>

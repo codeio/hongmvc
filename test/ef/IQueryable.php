@@ -1,8 +1,0 @@
-<?php 
-
-public interface IQueryable
-{
-
-}
-
-?>

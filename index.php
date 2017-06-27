@@ -1,6 +1,18 @@
 <?php
 
-require 'hongmvc/start.php';
+require 'hongmvc/mvc/ControllerContext.php';
+require 'hongmvc/mvc/IController.php';
+require 'hongmvc/mvc/IActionFilter.php';
+require 'hongmvc/mvc/IExceptionFilter.php';
+require 'hongmvc/mvc/IResultFilter.php';
+require 'hongmvc/mvc/ControllerBase.php';
+require 'hongmvc/mvc/Controller.php';
+
+use hongmvc\mvc\Controller;
+
+$controller = new Controller();
+$controller->init(123);
+echo $controller->controllerContext->requestContext;
 
 //HongMvc::start();
 

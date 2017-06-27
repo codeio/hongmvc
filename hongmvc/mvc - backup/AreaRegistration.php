@@ -1,8 +1,6 @@
 <?php
 
-if(!defined('IN_HONGMVC')) {
-    exit('Access Denied');
-}
+namespace hong\mvc;
 
 abstract class ActionResult
 {
