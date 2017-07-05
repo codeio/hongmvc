@@ -10,9 +10,9 @@ class Controller extends ControllerBase implements IActionFilter, IExceptionFilt
 
 	public $routeData = null;
 
-	public function init($requestContext)
+    public function init($requestContext)
     {
-    	parent::init($requestContext);
+        parent::init($requestContext);
     }
 
     public function actionExecuting($filterContext)

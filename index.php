@@ -11,7 +11,7 @@ require 'hongmvc/mvc/Controller.php';
 use hongmvc\mvc\Controller;
 
 $controller = new Controller();
-$controller->init(123);
+$controller->init(122424);
 echo $controller->controllerContext->requestContext;
 
 //HongMvc::start();
