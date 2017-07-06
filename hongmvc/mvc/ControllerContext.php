@@ -2,6 +2,8 @@
 
 namespace hongmvc\mvc;
 
+use hongmvc\web\RequestContext;
+
 class ControllerContext
 {
     public $controller = null;
@@ -14,9 +16,8 @@ class ControllerContext
 
     public $routeData = array();
     
-    public function __construct($requestContext) {
-    	echo $requestContext;
-        $this->$requestContext = $requestContext;
+    public function __construct(RequestContext $requestContext) {
+        $this->requestContext = $requestContext;
     }
 }
 

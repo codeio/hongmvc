@@ -1,5 +1,7 @@
 <?php
 
+require 'hongmvc/web/RequestContext.php';
+
 require 'hongmvc/mvc/ControllerContext.php';
 require 'hongmvc/mvc/IController.php';
 require 'hongmvc/mvc/IActionFilter.php';
@@ -9,10 +11,12 @@ require 'hongmvc/mvc/ControllerBase.php';
 require 'hongmvc/mvc/Controller.php';
 
 use hongmvc\mvc\Controller;
+use hongmvc\web\RequestContext;
 
+$context = new RequestContext();
 $controller = new Controller();
-$controller->init(122424);
-echo $controller->controllerContext->requestContext;
+$controller->init($context);
+$controller->controllerContext->requestContext->test();
 
 //HongMvc::start();
 

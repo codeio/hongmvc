@@ -1,6 +1,6 @@
 <?php
 
-namespace hongmvc\web;
+namespace HongMvc\Web;
 
 class RequestContext
 {
@@ -14,10 +14,10 @@ class RequestContext
 
     public $routeData = array();
     
-    public function __construct($requestContext) {
-    	echo $requestContext;
-        $this->$requestContext = $requestContext;
+    public function test() {
+    	echo 111222;
     }
+    
 }
 
 ?>
