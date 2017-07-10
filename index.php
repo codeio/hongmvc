@@ -1,22 +1,31 @@
 <?php
 
-require 'hongmvc/web/RequestContext.php';
+// require 'hongmvc/web/RequestContext.php';
 
-require 'hongmvc/mvc/ControllerContext.php';
-require 'hongmvc/mvc/IController.php';
-require 'hongmvc/mvc/IActionFilter.php';
-require 'hongmvc/mvc/IExceptionFilter.php';
-require 'hongmvc/mvc/IResultFilter.php';
-require 'hongmvc/mvc/ControllerBase.php';
-require 'hongmvc/mvc/Controller.php';
+// require 'hongmvc/mvc/ControllerContext.php';
+// require 'hongmvc/mvc/IController.php';
+// require 'hongmvc/mvc/IActionFilter.php';
+// require 'hongmvc/mvc/IExceptionFilter.php';
+// require 'hongmvc/mvc/IResultFilter.php';
+// require 'hongmvc/mvc/ControllerBase.php';
+// require 'hongmvc/mvc/Controller.php';
 
-use hongmvc\mvc\Controller;
-use hongmvc\web\RequestContext;
+// use hongmvc\mvc\Controller;
+// use hongmvc\web\RequestContext;
 
-$context = new RequestContext();
-$controller = new Controller();
-$controller->init($context);
-$controller->controllerContext->requestContext->test();
+// $context = new RequestContext();
+// $controller = new Controller();
+// $controller->init($context);
+// $controller->controllerContext->requestContext->test();
+
+use hongmvc\di\DependencyResolver;
+
+require 'hongmvc/di/DependencyResolver.php';
+
+$resolver1 = new DependencyResolver(11);
+$resolver2 = new DependencyResolver(22);
+echo print_r($resolver1);
+echo print_r($resolver2);
 
 //HongMvc::start();
 
