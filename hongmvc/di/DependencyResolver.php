@@ -5,6 +5,7 @@ namespace hongmvc\di;
 class DependencyResolver
 {
 	private static $_instance = null;
+    private $resolver = null;
 
 	private function __construct() {
 		
@@ -14,14 +15,19 @@ class DependencyResolver
 
     }
 
-    static public function getInstance() {
-    	echo print_r(self::$_instance) . '<br>';
-        self::$_instance = new self();
+    private static function getInstance() {
+        if(self::$_instance === null) {
+            self::$_instance = new self();
+        }
         return self::$_instance;
     }
 
+    public static function getResolver() {
+        return DependencyResolver::getInstance()->resolver;
+    }
+
     public static function setResolver(IDependencyResolver $resolver) {
-        //echo 111;
+        DependencyResolver::getInstance()->resolver = $resolver;
     }
 }
 

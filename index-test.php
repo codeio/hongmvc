@@ -35,19 +35,10 @@ use hongmvc\di\DependencyResolver;
 $resolver = new DefaultDependencyResolver();
 
 DependencyResolver::setResolver($resolver);
-
-$current = DependencyResolver::getResolver();
-
-$service = $current->getService("MyService");
-$service->aa();
-
-class MyService
-{
-	public function aa() {
-		echo 111;
-	}
-}
-
+DependencyResolver::setResolver($resolver);
+DependencyResolver::setResolver($resolver);
+DependencyResolver::setResolver($resolver);
+DependencyResolver::setResolver($resolver);
 
 // use hongmvc\di\IDependencyResolver;
 // use hongmvc\di\DefaultDependencyResolver;
