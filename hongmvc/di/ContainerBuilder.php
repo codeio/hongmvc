@@ -1,13 +1,12 @@
 <?php
 
 namespace hongmvc\di;
-use ReflectionClass;
 
-class DefaultDependencyResolver implements IDependencyResolver
+class ContainerBuilder
 {
 	private $_services = [];
 
-    public function getService($serviceType)
+    public function RegisterType(string $serviceType)
     {
     	if (isset($this->_services[$serviceType])) {
             return $this->_services[$serviceType];
@@ -18,6 +17,10 @@ class DefaultDependencyResolver implements IDependencyResolver
 		$this->_services[$serviceType] = $instance;
 
 		return $instance;
+    }
+
+    public function build() {
+        
     }
 }
 
